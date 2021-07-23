@@ -20,7 +20,7 @@ Product.init(
 
       },
 
-    Product_name: {
+    product_name: {
 
       type:DataTypes.STRING,
       allowNull:false,
