@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
       include: [
           {
           model: Product,
-          attributes:['id','product_name','price','stock', 'category_id']
+          through: ProductTag  
 
           } 
         ] 
@@ -93,10 +93,14 @@ router.delete("/:id", async (req, res) => {
       },
     });
     if (!tagData) {
-      res.status(404).json({ message: "No tag found with this id" });
-      return;
+    
+      return res.status(404).json({ message: "No tag found with this id" }); 
+     
+    
+    } else {
+      res.status(200).json(tagData);
     }
-    res.status(200).json(tagData);
+   
   } catch (err) {
     res.status(500).json(err);
   }

@@ -23,5 +23,9 @@ Building the back end for an e-commerce site by using Express.js API and Sequeli
 * I then test the API POST, PUT and DELETE routes in Insomnia and able to then create, update and delete data in my database.
 
 -------
+https://github.com/Maripia12/E-Commerce-Back-End
 
-![screenshot](Assets/Insomnia-get-post-put-delete.png)
+https://drive.google.com/file/d/1-cQo6xNN3Sy2yAORWAs4LZjaJ4bnnK-7/view
+
+
+![screenshot](Images/Insomnia-get-post-put-delete.png)
